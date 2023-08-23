@@ -1,0 +1,42 @@
+/* LOGIN Y CONTACTO */
+
+
+.login--section {
+  width: 100%;
+  background-color: #796f6f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario--login{
+  padding: 3rem 0rem;
+}
+
+.formulario--login h3 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+.formulario--login input {
+  border-top-left-radius:5px;
+  border-top-right-radius: 5px;
+  width: 250px;
+  height: 55px;
+  display: block;
+  border: none;
+  outline: none;
+  margin: 1rem 0rem;
+  outline: none;
+  border-bottom: solid #1a1818 2px;
+}
+
+.formulario--login input::placeholder{
+  padding: 0.5rem;
+  color:#1d1010;
+}
+.formulario--login input:focus {
+  outline: none;
+  border-bottom: solid #020203 2px;
+}

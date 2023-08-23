@@ -1,0 +1,88 @@
+/* CATALOGO PRODUCTOS */
+
+/* phones */
+@media only screen and (min-width: 0px) {
+  .catalogo--section {
+    background-color: #727274;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+  }
+  .catalogo--categoria {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .catalogo--h3,
+  .catalogo--a {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .catalogo--h3 {
+    font-size: 22px;
+    color: rgb(233, 243, 243);
+  }
+  .catalogo--a {
+    color: #e6dddd;
+  }
+  .catalogo--a img {
+    padding: 0.1rem;
+  }
+  .productos {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .productos .catalogo--div:nth-child(5) {
+    display: none;
+  }
+  .productos .catalogo--div:nth-child(6) {
+    display: none;
+  }
+  .catalogo--div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+  }
+  .catalogo--div p,
+  .catalogo--div a {
+    padding: 0.25rem;
+  }
+  .catalogo--div img {
+    width: 96%;
+  }
+}
+/* tablets*/
+@media only screen and (min-width: 361px) {
+  .catalogo--section {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+  .productos {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 0.5rem;
+  }
+  .catalogo--div p,
+  .catalogo--div a {
+    font-size: 12px;
+    color: #f9f9ff;
+  }
+}
+/* laptops and desktops */
+@media only screen and (min-width: 769px) {
+  .catalogo--section {
+    padding: 0.5rem 3rem 0.5rem 3rem;
+  }
+  .productos {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+  }
+  .productos .catalogo--div:nth-child(5) {
+    display: block;
+  }
+  .productos .catalogo--div:nth-child(6) {
+    display: block;
+  }
+}
